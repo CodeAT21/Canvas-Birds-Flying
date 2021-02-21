@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Birds Flying Effect</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel = "stylesheet" href = "css/Background.css"/>
+	<script type = "text/javascript" src = "js/jquery.min.js"></script>	
+	<script type = "text/javascript" src="js/flyBackground.js"></script>
+	<script type= "text/javascript">
+		$(document).ready(function(){
+			$(".Background").Background({
+				birds:'20',
+				size:'20',
+				interval : '30',
+				velocity : '3',
+				color : 'rgb(255, 255, 255, 1)' //Only In RGB format. don't use #hex or any other color format
+			});
+		})
+	</script>
+	
+	
+</head>
+<body>
+	<div class = "Background">
+		<canvas id = "Background"></canvas>
+	</div>
+	
+</body>
+</html>
